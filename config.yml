@@ -1,0 +1,10 @@
+secret: "mysecret" # secret for api
+url: "/ddns" # api url
+ip_header: "" # leave empty to disable, or headers like "X-Real-IP"
+aliyun:
+  enable: false # enable aliyun dns
+  endpoint: "alidns.aliyuncs.com" # aliyun public endpoint
+  ak: "" # aliyun ak
+  sk: "" # aliyun sk
+  domain: "" # domain like "example.com"
+  subdomain: "" # subdomain like "ddns"

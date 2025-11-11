@@ -1,0 +1,8 @@
+services:
+  ddns:
+    image: imwxz/ros-ddns
+    restart: always
+    volumes:
+      - ./config.yml:/app/config.yml:ro
+    ports:
+      - "8080:8080"
