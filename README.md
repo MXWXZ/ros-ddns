@@ -15,7 +15,7 @@ Use this script, add to scheduler whatever you like.
 :set ipaddr [:pick $ipaddr 0 ([len $ipaddr] -3)]
 :global recip
 :if ($ipaddr != $recip) do={
-    /tool fetch url="https://example.com/ddns?secret=$secret&ip=$ipaddr"
+    /tool fetch url="https://example.com/ddns?secret=$secret&ip=$ipaddr" output=none
     :log info "Set DDNS $recip to $ipaddr"
     :set recip "$ipaddr"
 }
